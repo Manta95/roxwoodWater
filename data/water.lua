@@ -2,7 +2,7 @@ local isInRoxwood = false
 
 local roxwoodZone = CircleZone:Create(vector3(-1833.236816, 7848.669434, 118.561996), 2600.0, {
     name = "roxwood",
-    debugPoly = true,
+    debugPoly = false,
     useZ = false
 })
 
@@ -28,3 +28,4 @@ roxwoodZone:onPlayerInOut(function(isInside)
         WaterOverrideSetStrength(0.0)
     end
 end)
+
